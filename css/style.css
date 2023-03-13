@@ -1,0 +1,642 @@
+/* --- gobales --- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Stretch Pro', sans-serif;
+}
+
+body {
+    background-color: #0c0c0c;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* duda de por que esto tiene margin-bottom*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    margin: 0;
+    color: #f1f1f1;
+}
+
+
+/* --- header carrusel --- */
+/* cambio de imagen para una mejor resulicion */
+/* desktop */
+@media screen and (min-width: 992px) {
+    .img__pc--visibility {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img__tablet--visibility {
+        visibility: visible;
+        width: 0;
+        height: 0;
+    }
+
+    .img__cel--visibility {
+        visibility: visible;
+        width: 0;
+        height: 0;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+    .img__pc--visibility {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .img__tablet--visibility {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img__cel--visibility {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+
+/* cel */
+@media screen and (max-width: 575px) {
+    .img__pc--visibility {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .img__tablet--visibility {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .img__cel--visibility {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* efecto nav:hover para celular-tablet */
+@media screen and (max-width: 991px) {
+
+    .nav__link:before {
+        background-color: #fff;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        margin-right: 10px;
+        transition: all .42s cubic-bezier(.25, .8, .25, 1);
+        width: 0;
+    }
+
+    .nav__link:hover:before {
+        background-color: #fff;
+        width: 3rem;
+    }
+}
+
+/* desaparece el boton para celular-tablet */
+@media screen and (min-width: 992px) {
+    .menu__dropdown {
+        display: none;
+    }
+}
+
+/* --- todas nuestras marcas ---*/
+/* marcas que trabajan con nosotros */
+
+.marcas {
+    background-color: #090909;
+    border-bottom: 1px solid #111;
+}
+
+.contenedor__marcas {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+/* tam. de las marcas */
+.marca__img {
+    width: 4em;
+}
+
+/* contenedor de las marcas */
+.contenedor__marcas {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* marcas mobile movimiento */
+@media screen and (max-width: 575.98px) {
+
+    .marcas-noslide {
+        display: none;
+    }
+
+    .slider__marcas {
+        width: 100vw;
+        height: 4em;
+        overflow: hidden;
+    }
+
+    .slider__marcas .slider-track__marcas {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(10em * 21);
+    }
+
+    .slider__marcas .slide__marca {
+        width: 10em;
+    }
+
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(calc(-10em * 9));
+            transform: translateX(calc(-10em * 9));
+        }
+    }
+
+}
+
+/* si no es mobile descativo el movimiento */
+/* la saco porque ocupan perfectamente el espacio */
+@media screen and (min-width: 576px) {
+    .marcas-slide {
+        display: none;
+    }
+}
+
+/* marcas desktop */
+@media screen and (min-width: 992px) {
+
+    .contenedor__marcas {
+        width: 80%;
+    }
+}
+
+/* marcas tablet */
+@media screen and (max-width: 991.98px) {
+
+    .contenedor__marcas {
+        width: 95%;
+    }
+}
+
+/* main */
+/* contenedor carta */
+
+.divisor__seccion {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.divisor__seccion-img {
+    width: 10%;
+    flex: 1;
+    height: 1px;
+    opacity: .1;
+}
+
+.titulo__seccion {
+    text-align: center;
+    margin: 1em 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+}
+
+.carta {
+    background-color: #090909;
+    border: 1px solid #111;
+    padding: .3rem;
+    margin: .5rem 0;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.548);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.carta:hover {
+    transform: scale(1.02);
+}
+
+/* propiedades de la carta */
+
+.carta__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.carta__img {
+    width: 100%;
+}
+
+.carta__nombre {
+    font-size: 1.7em;
+    font-family: 'Syne', sans-serif;
+}
+
+.carta__desc {
+    font-size: 1.4em;
+    font-family: 'Syne', sans-serif;
+}
+
+.carta__precio {
+    font-size: 1.4em;
+    font-family: 'Stretch Pro', sans-serif;
+}
+
+.contenedor__info {
+    background-color: #0c0c0c;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.conenedor__stock-talle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+}
+
+.disponibilidad {
+    color: #00aae4;
+}
+
+/* fonts mobile */
+@media screen and (max-width: 575px) {
+    .carta__nombre {
+        font-size: 1.5em;
+    }
+
+    .carta__desc {
+        font-size: 1.2em;
+    }
+
+    .carta__precio {
+        font-size: 1.1em;
+    }
+}
+
+/* --- botones --- */
+/* boton carta */
+.carta__btn {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border: .1em solid #44444427;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: #f7f7f7;
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    background-color: #121212;
+    font-weight: 500;
+}
+
+.carta__btn:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #44444427;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.carta__btn:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #00aae4;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.carta__btn:hover {
+    color: #000;
+    border: .1em solid #00aae4;
+}
+
+.carta__btn:hover:before {
+    top: -35%;
+    background-color: #00aae4;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.carta__btn:hover:after {
+    top: -45%;
+    background-color: #00aae4;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* boton whatsapp */
+.whatsapp__btn {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border: .1em solid #44444427;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: #f7f7f7;
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    background-color: #121212;
+    font-weight: 500;
+}
+
+.whatsapp__btn:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #44444427;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.whatsapp__btn:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.whatsapp__btn:hover {
+    color: #000;
+    border: .1em solid #25D366;
+}
+
+.whatsapp__btn:hover:before {
+    top: -35%;
+    background-color: #25D366;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.whatsapp__btn:hover:after {
+    top: -45%;
+    background-color: #25D366;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* boton instagram */
+.instagram__btn {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border: .1em solid #44444427;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: #f7f7f7;
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    background-color: #121212;
+    font-weight: 500;
+}
+
+.instagram__btn:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #44444427;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.instagram__btn:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #DD2A7B;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.instagram__btn:hover {
+    color: #000;
+    border: .1em solid #DD2A7B;
+}
+
+.instagram__btn:hover:before {
+    top: -35%;
+    background-color: #DD2A7B;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.instagram__btn:hover:after {
+    top: -45%;
+    background-color: #DD2A7B;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* --- formulario ---*/
+.contenedor__form {
+    background-color: #0c0c0c;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.form__input {
+    width: 100%;
+    margin: .4em 0;
+    border: none;
+    background-color: #f7f7f7;
+    color: #111;
+    padding: 1rem;
+    outline: none;
+    font-weight: 700;
+}
+
+.form__buttons {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        "enviar enviar"
+        "divisor divisor"
+        "whatsapp instagram"
+    ;
+    gap: .5em;
+}
+
+.form__buttons .carta__btn {
+    grid-area: enviar;
+}
+
+.form__buttons .from__divisor {
+    grid-area: divisor;
+}
+
+.form__buttons .whatsapp__btn {
+    grid-area: whatsapp;
+
+}
+
+.form__buttons .instagram__btn {
+    grid-area: instagram;
+
+}
+
+.form__buttons .whatsapp__btn,
+.instagram__btn {
+    text-decoration: none;
+}
+
+.from__divisor {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.from__divisor img {
+    width: 10%;
+    flex: 1;
+}
+
+.modal-header h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn-close {
+    color: #f7f7f7;
+}
+
+.form__header {
+    display: flex;
+    margin-bottom: .5em;
+}
+
+.form__header .form__btn-close {
+    margin-left: auto;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 4em;
+    padding-top: 2em;
+    background-color: #090909;
+}
+
+.footer .nav__marca {
+    margin-bottom: 1em;
+}
+
+
+.footer__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: .5em;
+    color: #f7f7f7;
+    font-size: 1em;
+}
+
+.footer__contenido .footer__item {
+    color: #f7f7f7;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+}
+
+.footer__contenido .footer__item:hover,
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1399px) {
+    .footer__logo {
+        width: 16em;
+        margin-bottom: 2em;
+    }
+
+    .footer__contenido {
+        align-items: center;
+        margin-bottom: 2em;
+    }
+}
+
+/* copyright */
+.copyright {
+    padding: 2em 0 1em 0;
+    color: #f1f1f1;
+    font-size: 1em;
+    text-align: center;
+}

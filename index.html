@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- css main -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>DripStyleUY</title>
+</head>
+<body>
+  <header>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New in</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Hombre
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                <li><a class="dropdown-item" href="#">Ropa</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mujer
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                <li><a class="dropdown-item" href="#">Ropa</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- carrusel -->
+    <div id="carouselExampleControlsTouching" class="container carousel slide" data-bs-ride="carousel"
+      data-bs-touch="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleControlsTouching" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleControlsTouching" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleControlsTouching" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="./img/hero/hero-desktop-1.jpeg" class="carrusel__img--desktop w-100" alt="...">
+          <img src="./img/hero/hero-mobile-1.jpeg" class="carrusel__img--tablet-mobile w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./img/hero/hero-desktop-2.jpeg" class="carrusel__img--desktop w-100" alt="...">
+          <img src="./img/hero/hero-mobile-2.jpeg" class="carrusel__img--tablet-mobile w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./img/hero/hero-desktop-1.jpeg" class="carrusel__img--desktop w-100" alt="...">
+          <img src="./img/hero/hero-mobile-1.jpeg" class="carrusel__img--tablet-mobile w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsTouching"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsTouching"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- section articulos principales -->
+    <div class="container">
+      <section class="principales">
+        <div class="divisor">
+          <div class="divisor__linea"></div>
+          <div class="divisor__texto">
+            <h2 class="divisor__titulo">Nuevos ingresos</h2>
+            <p class="divisor__subtitulo">Explorá los nuevos ingresos</p>
+          </div>
+          <div class="divisor__linea"></div>
+        </div>
+        <div class="grilla">
+          <article class="carta" data-aos="flip-right">
+            <div class="carta__new">
+              <p class="carta__new-text">new</p>
+            </div>
+            <img class="carta__img" src="./img/stock/zapatillasnikeairforce107lv8-1.jpg" alt="">
+            <h4 class="carta__nombre">Zapatillas Nike Air Force 1 07 Lv8</h4>
+            <p class="carta__precio">$ 53.999</p>
+          </article>
+          <article class="carta" data-aos="flip-right">
+            <div class="carta__new">
+              <p class="carta__new-text">new</p>
+            </div>
+            <img class="carta__img" src="./img/stock/ojotaspumapopcat20-1.jpg" alt="">
+            <h4 class="carta__nombre">Ojotas Puma Popcat 20</h4>
+            <p class="carta__precio">$ 13.999</p>
+          </article>
+          <article class="carta" data-aos="flip-right">
+            <div class="carta__new">
+              <p class="carta__new-text">new</p>
+            </div>
+            <img class="carta__img" src="./img/stock/buzonikesportsweatsportessentials.jpg" alt="">
+            <h4 class="carta__nombre">Buzo Nike Sportswear Sport Essentials</h4>
+            <p class="carta__precio">$ 18.499</p>
+          </article>
+          <article class="carta" data-aos="flip-right">
+            <div class="carta__new">
+              <p class="carta__new-text">new</p>
+            </div>
+            <img class="carta__img" src="./img/stock/buzopumaclassicsblock-1.jpg" alt="">
+            <h4 class="carta__nombre">Buzo Puma Classics Block</h4>
+            <p class="carta__precio">$ 19.999</p>
+          </article>
+          <article class="carta" data-aos="flip-right">
+            <div class="carta__new">
+              <p class="carta__new-text">new</p>
+            </div>
+            <img class="carta__img" src="./img/stock/zapatillasadidasdame8extply20-1.jpeg" alt="">
+            <h4 class="carta__nombre">Zapatillas Adidas Dame 8 Extply 2.0</h4>
+            <p class="carta__precio">$ 43.999</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__marca">
+            <h3 class="marca">
+              <a class="marca__link" href="/index.html">DripStyle<span class="marca__link--detalle">UY</span></a>
+            </h3>
+          </div>
+          <div class="footer__contenido">
+            <h3 class="footer__titulo">Contacto</h3>
+            <p class="footer__item">dripstyleuy@gmail.com</p>
+            <p class="footer__item">+59 8 93 775 765</p>
+          </div>
+          <div class="footer__contenido">
+            <h3 class="footer__titulo">Redes sociales</h3>
+            <a class="footer__item footer__item--link" href="https://www.instagram.com/dripstyle.uy/">Instagram</a>
+          </div>
+          <div class="footer__contenido">
+            <h3 class="footer__titulo">Términos</h3>
+            <a class="footer__item footer__item--link" href="#">Términos y Condiciones</a>
+            <a class="footer__item footer__item--link" href="#">Política de Privacidad</a>
+          </div>
+          <div class="footer__copyright">
+            &copy; 2023 DRIPSTYLEUY. Todos los derechos reservados.
+            <p class="footer__copyright-texto">Sitio web desarrollado por <a class="footer__copyright-link"
+                href="https://www.instagram.com/chancalaymateo/">@chancalaymateo</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+</html>

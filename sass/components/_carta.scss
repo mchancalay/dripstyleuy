@@ -1,0 +1,48 @@
+@use '../base/colors';
+@use '../base/fonts';
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+.carta {
+    color: colors.$color-dark;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    
+    &__img {
+        width: 100%;
+        border: 1px solid;
+        border-image: colors.$color-gradient-primary 1;
+        margin-bottom: 1px;
+        transition: all .2s;
+    }
+
+    &__nombre {
+        margin-top: 2px;
+        font-size: variables.$font-producto-titulo;
+    }
+
+    &__precio {
+        font-size: variables.$font-producto-precio;
+        color: colors.$color-light2;
+    }
+
+    &__precio,
+    &__nombre {
+        text-align: left;
+    }
+
+    &__new {
+        position: absolute;
+        right: 5px;
+        z-index: 1;
+        transition: all .2s;
+        &-text {
+            text-align: end;
+            text-transform: uppercase;
+            font-family: fonts.$font-stretch;
+            @include mixins.degradado(colors.$color-gradient-primary);
+        }
+    }
+
+}

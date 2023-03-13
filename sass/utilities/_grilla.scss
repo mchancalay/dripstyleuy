@@ -1,0 +1,43 @@
+@use '../utilities/variables';
+
+.grilla {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: variables.$spacing-grilla;
+}
+
+//  responsive
+@media screen and (max-width: 1399.99px) {
+    .grilla {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 1199.99px) {
+    .grilla {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 991.99px) {
+    .grilla {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+//  bajo la medida de los gaps en mobile para aprovechar mas la pantalla
+@media screen and (max-width: 575.99px) {
+    .grilla {
+        gap: variables.$spacing-grilla-mobile;
+    }
+    .container {
+        padding: .3em;
+    }
+}

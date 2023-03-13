@@ -1,0 +1,18 @@
+@use '../base/colors';
+@use '../base/fonts';
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+.marca {
+    text-transform: uppercase;
+    
+    &__link {
+        color: colors.$color-dark;
+        font-family: fonts.$font-stretch;
+
+        &--detalle {
+            font-family: fonts.$font-stretch;
+            @include mixins.degradado(colors.$color-gradient-primary);
+        }
+    }
+}

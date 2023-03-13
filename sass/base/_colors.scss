@@ -1,0 +1,85 @@
+//  paleta de colores
+$color-primary: #00b7ff;
+$color-dark: #080808;
+$color-white: #fff;
+$color-light: #f7f7f7f7;
+$color-light2: #aaaaa8;
+$color-gradient-primary: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8fa0e7, #83a5eb, #77abee, #69aef3, #57b1f8, #3eb4fc, #00b7ff);
+
+
+
+
+
+/* tam. de las marcas */
+.marca__img {
+    width: 4em;
+}
+
+/* contenedor de las marcas */
+.contenedor__marcas {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* marcas mobile movimiento */
+@media screen and (max-width: 575.98px) {
+
+    .marcas-noslide {
+        display: none;
+    }
+
+    .slider__marcas {
+        width: 100vw;
+        height: 4em;
+        overflow: hidden;
+    }
+
+    .slider__marcas .slider-track__marcas {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(10em * 21);
+    }
+
+    .slider__marcas .slide__marca {
+        width: 10em;
+    }
+
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(calc(-10em * 9));
+            transform: translateX(calc(-10em * 9));
+        }
+    }
+
+}
+
+/* si no es mobile descativo el movimiento */
+/* la saco porque ocupan perfectamente el espacio */
+@media screen and (min-width: 576px) {
+    .marcas-slide {
+        display: none;
+    }
+}
+
+/* marcas desktop */
+@media screen and (min-width: 992px) {
+
+    .contenedor__marcas {
+        width: 80%;
+    }
+}
+
+/* marcas tablet */
+@media screen and (max-width: 991.98px) {
+
+    .contenedor__marcas {
+        width: 95%;
+    }
+}

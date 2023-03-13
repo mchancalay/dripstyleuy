@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/stretch-pro");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/stretch-pro");
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* tam. de las marcas */
+.marca__img {
+  width: 4em;
+}
+
+/* contenedor de las marcas */
+.contenedor__marcas {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* marcas mobile movimiento */
+@media screen and (max-width: 575.98px) {
+  .marcas-noslide {
+    display: none;
+  }
+  .slider__marcas {
+    width: 100vw;
+    height: 4em;
+    overflow: hidden;
+  }
+  .slider__marcas .slider-track__marcas {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: 210em;
+  }
+  .slider__marcas .slide__marca {
+    width: 10em;
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-90em);
+      transform: translateX(-90em);
+    }
+  }
+}
+/* si no es mobile descativo el movimiento */
+/* la saco porque ocupan perfectamente el espacio */
+@media screen and (min-width: 576px) {
+  .marcas-slide {
+    display: none;
+  }
+}
+/* marcas desktop */
+@media screen and (min-width: 992px) {
+  .contenedor__marcas {
+    width: 80%;
+  }
+}
+/* marcas tablet */
+@media screen and (max-width: 991.98px) {
+  .contenedor__marcas {
+    width: 95%;
+  }
+}
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  font-size: 14px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+}
+
+@media screen and (max-width: 1399.99px) {
+  .grilla {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 1199.99px) {
+  .grilla {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 991.99px) {
+  .grilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575.99px) {
+  .grilla {
+    gap: 0.8em 0.3em;
+  }
+  .container {
+    padding: 0.3em;
+  }
+}
+@media screen and (max-width: 991.99px) {
+  .carrusel__img--desktop {
+    display: none;
+  }
+  .carrusel__img--tablet-mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carrusel__img--desktop {
+    display: block;
+  }
+  .carrusel__img--tablet-mobile {
+    display: none;
+  }
+}
+.carta {
+  color: #080808;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.carta__img {
+  width: 100%;
+  border: 1px solid;
+  border-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8fa0e7, #83a5eb, #77abee, #69aef3, #57b1f8, #3eb4fc, #00b7ff) 1;
+  margin-bottom: 1px;
+  transition: all 0.2s;
+}
+.carta__nombre {
+  margin-top: 2px;
+  font-size: 14px;
+}
+.carta__precio {
+  font-size: 12px;
+  color: #aaaaa8;
+}
+.carta__precio, .carta__nombre {
+  text-align: left;
+}
+.carta__new {
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.carta__new-text {
+  text-align: end;
+  text-transform: uppercase;
+  font-family: "Stretch Pro", sans-serif;
+  background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8fa0e7, #83a5eb, #77abee, #69aef3, #57b1f8, #3eb4fc, #00b7ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.marca {
+  text-transform: uppercase;
+}
+.marca__link {
+  color: #080808;
+  font-family: "Stretch Pro", sans-serif;
+}
+.marca__link--detalle {
+  font-family: "Stretch Pro", sans-serif;
+  background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8fa0e7, #83a5eb, #77abee, #69aef3, #57b1f8, #3eb4fc, #00b7ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 3em 0;
+}
+.divisor__linea {
+  width: 100%;
+  height: 1px;
+  background-color: #aaaaa8;
+  flex: 1;
+}
+.divisor__texto {
+  text-align: center;
+}
+.divisor__titulo {
+  font-family: "Stretch Pro", sans-serif;
+  text-transform: uppercase;
+}
+.divisor__subtitulo {
+  color: #aaaaa8;
+}
+
+.nav__marca, .nav__marca--detalle {
+  color: #080808;
+  text-transform: uppercase;
+  font-family: "Stretch Pro", sans-serif;
+}
+
+.nav__marca--detalle {
+  color: #00b7ff;
+}
+
+.footer {
+  background-color: rgba(247, 247, 247, 0.968627451);
+}
+.footer__container {
+  padding: 1em;
+  display: grid;
+  justify-items: center;
+}
+.footer__titulo {
+  color: #080808;
+  text-transform: uppercase;
+}
+.footer__item {
+  color: #aaaaa8;
+  font-size: "Stretch Pro", sans-serif;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.footer__item--link:hover {
+  text-decoration: underline;
+}
+.footer__copyright {
+  color: #aaaaa8;
+  font-size: 9px;
+}
+.footer__copyright-link {
+  color: #aaaaa8;
+}
+.footer__copyright-texto, .footer__copyright-link {
+  font-size: 9px;
+}
+.footer__copyright-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 575.99px) {
+  .footer__container {
+    text-align: center;
+    gap: 1em;
+  }
+}
+@media screen and (min-width: 576px) {
+  .footer__container {
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__marca {
+    grid-column: 1/4;
+    text-align: center;
+  }
+  .footer__copyright {
+    grid-column: 1/4;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer__container {
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer__marca {
+    grid-column: 1/1;
+    text-align: center;
+  }
+  .footer__copyright {
+    grid-column: 1/5;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */

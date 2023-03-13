@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <!-- fuente principal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- css main -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>DripStyleUY</title>
+
+</head>
+
+<body>
+  <header>
+    <!-- nav -->
+    <article>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <h1 class="nav__marca">
+            <a href="../index.html">Dripstyle<span class="nav__marca-detalle">uy</span></a>
+          </h1>
+          <!-- boton creado por 3ros -->
+          <button class="menu__dropdown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="burger" class="nav__burger">
+              <input id="burger" type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav__list navbar-nav">
+              <li class="nav__item">
+                <a class="nav__link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav__item nav-item dropdown">
+                <a class="nav__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Marcas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../index.html">Todas</a></li>
+                  <li><a class="dropdown-item" href="#">Adidas</a></li>
+                  <li><a class="dropdown-item" href="/html/nike.html">Nike</a></li>
+                  <li><a class="dropdown-item" href="#">Jordan</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Nosotros</a>
+              </li>
+              <li class="nav__item">
+                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="nav__link " href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </article>
+  </header>
+
+
+  <main>
+    <section>
+
+      <div class="divisor__seccion">
+        <img class="divisor__seccion-img" src="../img/divisor.png" alt="">
+        <h2 class="titulo__seccion">Nike</h2>
+        <img class="divisor__seccion-img" src="../img/divisor.png" alt="">
+      </div>
+
+      <!-- listado calzado -->
+      <div class="container-xxl">
+        <div class="row">
+          <!-- Nike Zoom GT Black -->
+          <article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="carta" data-bs-toggle="modal" data-bs-target="#nikezoomgtblack">
+              <img src="../img/stock/nikezoomgtblack/1.jpeg" class="d-block w-100" alt="...">
+              <div class="carta__contenido">
+                <h4 class="carta__nombre">Nike Zoom GT</h4>
+                <p class="carta__desc">Black</p>
+                <p class="carta__precio">$U 1.800,00</p>
+              </div>
+            </div>
+            <!-- Detalle -->
+            <div class="modal fade" id="nikezoomgtblack" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="contenedor__info modal-content">
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form__header">
+                            <h1 class="form__titulo">Más información</h1>
+                            <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div id="carouselNikeZoomGTBlack" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button data-bs-target="#carouselNikeZoomGTBlack" data-bs-slide-to="0"
+                                class="active"></button>
+                              <button type="button" data-bs-target="#carouselNikeZoomGTBlack" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselNikeZoomGTBlack" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/stock/nikezoomgtblack/1.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/nikezoomgtblack/2.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/nikezoomgtblack/3.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                              data-bs-target="#carouselNikeZoomGTBlack" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                              data-bs-target="#carouselNikeZoomGTBlack" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                          </div>
+                          <div class="carta__contenido">
+                            <h4 class="carta__nombre">Nike Zoom GT</h4>
+                            <p class="carta__desc">Black</p>
+                            <p class="carta__precio">$U 1.800,00</p>
+
+                            <div class="conenedor__stock-talle">
+                              <p class="stock">Stock: <span class="disponibilidad">disponible</span></p>
+                              <p class="talle">Talles: <span class="disponibilidad">todos disponibles</span></p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mt-2">
+                          <a class="carta__btn" href="">Encargar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Nike Zoom GT Blue -->
+          <article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="carta" data-bs-toggle="modal" data-bs-target="#nikeZoomGTBlue">
+              <img src="../img/stock/airmaxblack/1.png" class="d-block w-100" alt="...">
+              <div class="carta__contenido">
+                <h4 class="carta__nombre">Nike Zoom GT</h4>
+                <p class="carta__desc">Blue</p>
+                <p class="carta__precio">$U 1.800,00</p>
+              </div>
+            </div>
+
+            <div class="modal fade" id="nikeZoomGTBlue" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="contenedor__info modal-content">
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form__header">
+                            <h1 class="form__titulo">Más información</h1>
+                            <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div id="carouselNikeZoomGTBlue" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button data-bs-target="#carouselNikeZoomGTBlue" data-bs-slide-to="0"
+                                class="active"></button>
+                              <button type="button" data-bs-target="#carouselNikeZoomGTBlue" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselNikeZoomGTBlue" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/stock/nikezoomgtblue/1.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/nikezoomgtblue/2.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/nikezoomgtblue/3.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNikeZoomGTBlue"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselNikeZoomGTBlue"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                          </div>
+                          <div class="carta__contenido">
+                            <h4 class="carta__nombre">Nike Zoom GT</h4>
+                            <p class="carta__desc">Blue</p>
+                            <p class="carta__precio">$U 1.800,00</p>
+
+                            <div class="conenedor__stock-talle">
+                              <p class="stock">Stock: <span class="disponibilidad">disponible</span></p>
+                              <p class="talle">Talles: <span class="disponibilidad">todos disponibles</span></p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mt-2">
+                          <button class="carta__btn">Encargar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </article>
+          <!-- Nike Zoom GT Green -->
+          <article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="carta" data-bs-toggle="modal" data-bs-target="#nikezoomgtgreen">
+              <img src="../img/stock/nikezoomgtgreen/1.jpeg" class="d-block w-100" alt="...">
+              <div class="carta__contenido">
+                <h4 class="carta__nombre">Nike Zoom GT</h4>
+                <p class="carta__desc">Green</p>
+                <p class="carta__precio">$U 1.800,00</p>
+              </div>
+            </div>
+
+            <div class="modal fade" id="nikezoomgtgreen" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="contenedor__info modal-content">
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form__header">
+                            <h1 class="form__titulo">Más información</h1>
+                            <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div id="carouselnikezoomgtgreen" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button data-bs-target="#carouselnikezoomgtgreen" data-bs-slide-to="0"
+                                class="active"></button>
+                              <button type="button" data-bs-target="#carouselnikezoomgtgreen" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselnikezoomgtgreen" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/stock/nikezoomgtgreen/1.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/nikezoomgtgreen/2.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/nikezoomgtgreen/3.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                              data-bs-target="#carouselnikezoomgtgreen" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                              data-bs-target="#carouselnikezoomgtgreen" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                          </div>
+                          <div class="carta__contenido">
+                            <h4 class="carta__nombre">Nike Zoom GT</h4>
+                            <p class="carta__desc">Green</p>
+                            <p class="carta__precio">$U 1.800,00</p>
+
+                            <div class="conenedor__stock-talle">
+                              <p class="stock">Stock: <span class="disponibilidad">disponible</span></p>
+                              <p class="talle">Talles: <span class="disponibilidad">todos disponibles</span></p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mt-2">
+                          <button class="carta__btn">Encargar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Nike AirMax Black -->
+          <article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="carta" data-bs-toggle="modal" data-bs-target="#airmaxblack">
+              <img src="../img/stock/airmaxblack/1.png" class="d-block w-100" alt="...">
+              <div class="carta__contenido">
+                <h4 class="carta__nombre">Nike AirMax</h4>
+                <p class="carta__desc">Black</p>
+                <p class="carta__precio">$U 1.800,00</p>
+              </div>
+            </div>
+
+            <div class="modal fade" id="airmaxblack" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="contenedor__info modal-content">
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form__header">
+                            <h1 class="form__titulo">Más información</h1>
+                            <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div id="carouselairmaxblack" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button data-bs-target="#carouselairmaxblack" data-bs-slide-to="0"
+                                class="active"></button>
+                              <button type="button" data-bs-target="#carouselairmaxblack" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselairmaxblack" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/stock/airmaxblack/1.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/airmaxblack/2.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/airmaxblack/3.png" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselairmaxblack"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselairmaxblack"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                          </div>
+                          <div class="carta__contenido">
+                            <h4 class="carta__nombre">Nike AirMax</h4>
+                            <p class="carta__desc">Black</p>
+                            <p class="carta__precio">$U 1.800,00</p>
+
+                            <div class="conenedor__stock-talle">
+                              <p class="stock">Stock: <span class="disponibilidad">disponible</span></p>
+                              <p class="talle">Talles: <span class="disponibilidad">todos disponibles</span></p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mt-2">
+                          <button class="carta__btn">Encargar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Nike AirMax White -->
+          <article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="carta" data-bs-toggle="modal" data-bs-target="#airmaxwhite">
+              <img src="../img/stock/airmaxwhite/1.png" class="d-block w-100" alt="...">
+              <div class="carta__contenido">
+                <h4 class="carta__nombre">Nike AirMax</h4>
+                <p class="carta__desc">White</p>
+                <p class="carta__precio">$U 1.800,00</p>
+              </div>
+            </div>
+
+            <div class="modal fade" id="airmaxwhite" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="contenedor__info modal-content">
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form__header">
+                            <h1 class="form__titulo">Más información</h1>
+                            <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div id="carouselairmaxwhite" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button data-bs-target="#carouselairmaxwhite" data-bs-slide-to="0"
+                                class="active"></button>
+                              <button type="button" data-bs-target="#carouselairmaxwhite" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselairmaxwhite" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/stock/airmaxwhite/1.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/airmaxwhite/2.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/airmaxwhite/3.png" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselairmaxwhite"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselairmaxwhite"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                          </div>
+                          <div class="carta__contenido">
+                            <h4 class="carta__nombre">Nike AirMax</h4>
+                            <p class="carta__desc">white</p>
+                            <p class="carta__precio">$U 1.800,00</p>
+
+                            <div class="conenedor__stock-talle">
+                              <p class="stock">Stock: <span class="disponibilidad">disponible</span></p>
+                              <p class="talle">Talles: <span class="disponibilidad">todos disponibles</span></p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mt-2">
+                          <button class="carta__btn">Encargar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Nike AirMax Gray-->
+          <article class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="carta" data-bs-toggle="modal" data-bs-target="#airmaxgray">
+              <img src="../img/stock/airmaxgray/1.png" class="d-block w-100" alt="...">
+              <div class="carta__contenido">
+                <h4 class="carta__nombre">Nike AirMax</h4>
+                <p class="carta__desc">Gray</p>
+                <p class="carta__precio">$U 1.800,00</p>
+              </div>
+            </div>
+
+            <div class="modal fade" id="airmaxgray" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="contenedor__info modal-content">
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form__header">
+                            <h1 class="form__titulo">Más información</h1>
+                            <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div id="carouselairmaxgray" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button data-bs-target="#carouselairmaxgray" data-bs-slide-to="0" class="active"></button>
+                              <button type="button" data-bs-target="#carouselairmaxgray" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselairmaxgray" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="../img/stock/airmaxgray/1.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/airmaxgray/2.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../img/stock/airmaxgray/3.png" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselairmaxgray"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselairmaxgray"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Siguiente</span>
+                            </button>
+                          </div>
+                          <div class="carta__contenido">
+                            <h4 class="carta__nombre">Nike AirMax</h4>
+                            <p class="carta__desc">Gray</p>
+                            <p class="carta__precio">$U 1.800,00</p>
+
+                            <div class="conenedor__stock-talle">
+                              <p class="stock">Stock: <span class="disponibilidad">disponible</span></p>
+                              <p class="talle">Talles: <span class="disponibilidad">todos disponibles</span></p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mt-2">
+                          <button class="carta__btn">Encargar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  </main>
+
+  <!-- formulario modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="contenedor__form modal-content">
+        <div class="modal-body">
+          <form class="form" action="">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div class="form__header">
+                    <h1 class="form__titulo">Contactanos</h1>
+                    <div class="form__btn-close d-flex align-items-center" data-bs-theme="dark">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="email" placeholder="Correo" class="form__input form__correo">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" placeholder="Asunto" class="form__input form__asunto">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <textarea rows="7" placeholder="Mensaje" class="form__input form__mensaje"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form__buttons col">
+                  <button class="carta__btn">Enviar</button>
+                  <div class="from__divisor">
+                    <img src="../img/divisor.png" alt="">
+                    <p>o contactar por</p>
+                    <img src="../img/divisor.png" alt="">
+                  </div>
+                  <a href="" class="whatsapp__btn">WhatsApp</a>
+                  <a href="" class="instagram__btn">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-xxl-3">
+          <h3 class="nav__marca">
+            <a href="../index.html">Dripstyle<span class="nav__marca-detalle">uy</span></a>
+          </h3>
+        </div>
+        <div class="col-md-4 col-xxl-3 footer__contenido">
+          <h3 class="footer__titulo">Contacto</h3>
+          <p class="footer__item">dripstyleuy@gmail.com</p>
+          <p class="footer__item">+59 8 93 775 765</p>
+        </div>
+        <div class="col-md-4 col-lg-3 footer__contenido">
+          <h3 class="footer__titulo">Redes sociales</h3>
+          <a class="footer__item" href="https://www.instagram.com/dripstyle.uy/">Instagram</a>
+        </div>
+        <div class="col-md-4 col-xxl-3 footer__contenido">
+          <h3 class="footer__titulo">Términos</h3>
+          <a class="footer__item" href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2023 DRIPSTYLEUY. Todos los derechos reservados.
+      <p>Sitio web desarrollado por <a href="https://www.instagram.com/chancalaymateo/">@chancalaymateo</a>.</p>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <!-- boxicons -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
