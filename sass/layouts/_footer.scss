@@ -19,21 +19,18 @@ $font-syne: 'Syne', sans-serif;
         padding: 1em;
         display: grid;
         justify-items: center;
-
     }
 
     &__titulo {
         color: colors.$color-dark;
         text-transform: uppercase;
-
     }
 
     &__item {
         color: colors.$color-light2;
-        font-size: 'Stretch Pro', sans-serif;
         text-decoration: none;
         display: block;
-        font-size: variables.$font-footer;
+        font-size: variables.$font-footer-item;
 
         &--link:hover {
             text-decoration: underline;
@@ -43,16 +40,16 @@ $font-syne: 'Syne', sans-serif;
     &__copyright {
         color: colors.$color-light2;
         font-size: variables.$font-footer-copyright;
-    
+
         &-link {
             color: colors.$color-light2;
         }
-    
+
         &-texto,
         &-link {
             font-size: variables.$font-footer-copyright;
         }
-    
+
         &-link:hover {
             text-decoration: underline;
         }

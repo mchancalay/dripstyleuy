@@ -7,6 +7,7 @@
     align-items: center;
     gap: 1em;
     margin: variables.$spacing-section;
+    color: colors.$color-dark;
 
     &__linea {
         width: 100%;
@@ -17,6 +18,7 @@
 
     &__texto {
         text-align: center;
+        padding: 1em;
     }
 
     &__titulo {

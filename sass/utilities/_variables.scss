@@ -1,5 +1,8 @@
-//  maps
-// font map
+//  ************
+//  *** maps ***
+//  ************
+
+//  font map
 $general-font-sizes: (
   "h1": 22px,
   "h2": 20px,
@@ -7,30 +10,41 @@ $general-font-sizes: (
   "h4": 16px,
   "h5": 16px,
   "h6": 16px,
-  "p": 14px,
-  "a": 14px
+  "p": 16px,
+  "a": 16px
 );
 
-// asignacion maps
-// asignacion font map
+//  ***********************
+//  *** asignacion maps ***
+//  ***********************
+
+//  font map
 @each $tag, $size in $general-font-sizes {
   #{$tag} {
     font-size: $size;
   }
 }
-//  size fonts
-//  footer
-$font-footer: 12px;
+
+//  ******************
+//  *** size fonts ***
+//  ******************
+
+//  footer -- se quiere que el footer no sea tan grande y llamativo por eso utilizo fuentes especiales chicas.
+$font-footer-item: 12px;
 $font-footer-copyright: 9px;
 $font-footer-marca: 12px;
 
+// carta
 $font-producto-titulo: 14px;
 $font-producto-precio: 12px;
 
-//  spacings
-// entre secciones
+//  ****************
+//  *** spacings ***
+//  ****************
+
+//  entre secciones
 $spacing-section: 3em 0;
-// entre cartas (grilla)
+//  entre cartas (grilla)
 $spacing-grilla: 1em;
 $spacing-grilla-mobile: .8em .3em;
 

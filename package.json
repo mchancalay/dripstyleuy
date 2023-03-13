@@ -1,0 +1,19 @@
+{
+  "name": "dripstyleuy",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000d\u0000r\u0000i\u0000p\u0000s\u0000t\u0000y\u0000l\u0000e\u0000u\u0000y\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchancalay/dripstyleuy.git"
+  },
+  "author": "Mateo Chancalay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mchancalay/dripstyleuy/issues"
+  },
+  "homepage": "https://github.com/mchancalay/dripstyleuy#readme"
+}

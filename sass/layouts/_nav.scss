@@ -1,13 +1,2 @@
 @use '../base/colors';
 @use '../base/fonts';
-
-.nav__marca {
-    color: colors.$color-dark;
-    text-transform: uppercase;
-    font-family: fonts.$font-stretch;
-}
-
-.nav__marca--detalle {
-    @extend .nav__marca;
-    color: colors.$color-primary;
-}

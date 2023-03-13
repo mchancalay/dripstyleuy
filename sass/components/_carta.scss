@@ -8,13 +8,31 @@
     padding: 1px;
     display: flex;
     flex-direction: column;
-    
-    &__img {
+
+    &__imgs {
         width: 100%;
         border: 1px solid;
         border-image: colors.$color-gradient-primary 1;
         margin-bottom: 1px;
         transition: all .2s;
+    }
+
+    &__img {
+        width: 100%;
+
+        &--2 {
+            display: none;
+        }
+    }
+
+    &:hover {
+        .carta__img--1 {
+            display: none;
+        }
+
+        .carta__img--2 {
+            display: block;
+        }
     }
 
     &__nombre {
@@ -32,11 +50,16 @@
         text-align: left;
     }
 
+    // new
     &__new {
         position: absolute;
-        right: 5px;
+        right: 11px;
+        top: -11px;
+        background-color: #fff;
+        padding: 0 5px;
         z-index: 1;
         transition: all .2s;
+
         &-text {
             text-align: end;
             text-transform: uppercase;
@@ -44,5 +67,4 @@
             @include mixins.degradado(colors.$color-gradient-primary);
         }
     }
-
 }
