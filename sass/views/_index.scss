@@ -6,7 +6,7 @@
 .registro {
     padding: 1em;
     background-color: colors.$color-light;
-    margin: 4em 0;
+    margin: variables.$spacing-section;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,6 @@
 
     &__text {
         letter-spacing: variables.$letter-spacing;
-
         color: colors.$color-dark;
         text-transform: uppercase;
         text-align: center;
