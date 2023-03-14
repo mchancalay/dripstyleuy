@@ -6,6 +6,7 @@
 //  utilities
 @use 'utilities/variables';
 @use 'utilities/grilla';
+@use 'utilities/gallery';
 
 //  components
 @use 'components/carrusel';
@@ -13,6 +14,7 @@
 @use 'components/carta';
 @use 'components/marca';
 @use 'components/divisor';
+@use 'components/inputs';
 
 //  layouts
 @use 'layouts/nav';

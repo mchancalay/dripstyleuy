@@ -5,6 +5,7 @@
 
 .marca {
     text-transform: uppercase;
+    letter-spacing: variables.$letter-spacing;
     
     &__link {
         color: colors.$color-dark;

@@ -1,0 +1,38 @@
+@use '../utilities/variables';
+@use '../base/colors';
+@use '../base/fonts';
+
+.gallery {
+    display: flex;
+    height: 20em;
+    gap: 1em;
+
+    &__img {
+        flex: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        transition:  all .1s cubic-bezier(.25,.04,.45,.05);
+
+    }
+
+    &__img:hover {
+        flex: 3;
+    }
+
+    &__designed {
+        font-family: fonts.$font-poppins;
+        font-size: variables.$font-gallery-user;
+        color: colors.$color-dark;
+        position: relative;
+        bottom: -322px;
+    }
+
+    &__user {
+        font-size: variables.$font-gallery-user;
+        color: colors.$color-dark;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

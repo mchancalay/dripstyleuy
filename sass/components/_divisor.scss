@@ -24,6 +24,7 @@
     &__titulo {
         font-family: fonts.$font-stretch;
         text-transform: uppercase;
+        letter-spacing: variables.$letter-spacing;
     }
 
     &__subtitulo {
