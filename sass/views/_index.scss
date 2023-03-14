@@ -4,17 +4,21 @@
 @use '../utilities/mixins';
 
 .registro {
-    height: 5em;
+    padding: 1em;
     background-color: colors.$color-light;
     margin: 4em 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: .5em;
+
     &__text {
-        font-family: fonts.$font-stretch;
+        letter-spacing: variables.$letter-spacing;
+
         color: colors.$color-dark;
         text-transform: uppercase;
+        text-align: center;
 
         &--detalle {
             @extend .registro__text;
