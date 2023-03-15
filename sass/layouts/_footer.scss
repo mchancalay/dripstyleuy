@@ -14,7 +14,7 @@ $font-syne: 'Syne', sans-serif;
 
 .footer {
     background-color: colors.$color-light;
-    margin-top: variables.$spaceing-section-onedirection;
+    margin-top: variables.$spacing-section-footer;
 
     &__container {
         padding: 1em;
@@ -60,6 +60,7 @@ $font-syne: 'Syne', sans-serif;
 // responsive
 @media screen and (max-width: 575.99px) {
     .footer {
+
         &__container {
             text-align: center;
             gap: 1em;
