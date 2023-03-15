@@ -12,11 +12,16 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: auto 100%;
-        transition:  all .1s cubic-bezier(.25,.04,.45,.05);
+        transition: all .1s cubic-bezier(.25, .04, .45, .05);
 
     }
 
     &__img:hover {
+        flex: 3;
+
+    }
+
+    &__img--activado {
         flex: 3;
     }
 
@@ -31,8 +36,45 @@
     &__user {
         font-size: variables.$font-gallery-user;
         color: colors.$color-dark;
+
         &:hover {
             text-decoration: underline;
         }
     }
+}
+
+@media screen and (max-width: 1399.99px) {
+    .gallery__img:nth-of-type(n+11) {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 1199.99px) {
+    .gallery__img:nth-of-type(n+9) {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 991.99px) {
+    .gallery__img:nth-of-type(n+7) {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 766.99px) {
+    .gallery__img:nth-of-type(n+6) {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 564.99px) {
+    .gallery__img:nth-of-type(n+5) {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 464.99px) {
+    .gallery__img:nth-of-type(n+4) {
+        display: none;
+      }
 }
