@@ -71,16 +71,46 @@
             </div>
         </nav>
 
-        <form action="">
-            <div class="container">
-                <div class="row g-3">
-                    <input class="input-contacto__nombre col-12" type="text" id="input" required="" placeholder="Nombre">
-                    <input class="input-contacto__correo col-12" type="email" id="input" required="" placeholder="Correo">
-                    <input class="input-contacto__asunto col-12" type="text" id="input" required="" placeholder="Asunto">
-                    <textarea class="input-contacto__mensaje col-12" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+        <div class="container">
+            <div class="formulario row justify-content-center align-items-center">
+                <div class="col-4 f">
+                    <div class="formulario-decorativo">
+                        <img class="formulario-decorativo__img" src="/img/frases/frase-1.jpg" alt="">
+                        <div class="formulario-decorativo__marco"></div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <form class="formulario-inputs" action="">
+                        <div class="row">
+                            <input class="formulario-input formulario-input__nombre col m-2" type="text" id="input"
+                                required="" placeholder="Nombre">
+                            <input class="formulario-input formulario-input__correo col m-2" type="email" id="input"
+                                required="" placeholder="Correo">
+                        </div>
+                        <div class="row">
+                            <input class="formulario-input formulario-input__asunto col m-2" type="text" id="input"
+                                required="" placeholder="Asunto">
+                        </div>
+                        <div class="row">
+                            <textarea class="formulario-input formulario-input__mensaje col m-2" name="" id="" cols="30"
+                                rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="boton-primario col-3 m-2">Enviar</button>
+                        </div>
+                        <div class="row">
+                            <div class="divisor">
+                                <div class="divisor__linea"></div>
+                                <p class="divisor__ocontactarpor">o contactar por</p>
+                                <div class="divisor__linea"></div>
+                              </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
+        </div>
+
 
         <footer class="footer">
             <div class="container">

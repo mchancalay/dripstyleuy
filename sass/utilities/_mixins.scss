@@ -6,3 +6,8 @@
     background-clip: text;
     color: transparent;
 }
+
+@mixin resetInput() {
+    border: none;
+    outline: none;
+}

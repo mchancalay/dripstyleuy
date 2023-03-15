@@ -1,0 +1,43 @@
+@use '../base/colors';
+@use '../base/fonts';
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+
+.formulario {
+    margin-top: 5em;
+
+    &-decorativo {
+        position: relative;
+
+        &__img {
+            width: 100%;
+            flex: 1;
+        }
+
+        &__marco {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 1px solid;
+            border-image: colors.$color-gradient-primary 1;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &-inputs {
+        margin-left: 4em;
+    }
+
+    &-input {
+        @include mixins.resetInput();
+        padding: .4em 0 .4em .6em;
+        background-color: colors.$color-light;
+    }
+
+
+
+}

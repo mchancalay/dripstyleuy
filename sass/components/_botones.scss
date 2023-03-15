@@ -2,6 +2,7 @@
 @use '../base/fonts';
 @use '../utilities/variables';
 
+//  boton unirse al club
 .cta {
     border: none;
     background: none;
@@ -51,3 +52,30 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+// boton general
+.boton-primario {
+  position: relative;
+  height: 40px;
+  outline: none;
+  border: 1px solid;
+  border-image: colors.$color-gradient-primary 1;
+  background-color: transparent;
+}
+
+.boton-primario:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 7px;
+  left: 7px;
+  height: 100%;
+  background-color: colors.$color-light;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.boton-primario:hover:after {
+  top: 0px;
+  left: 0px;
+}
