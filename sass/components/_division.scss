@@ -1,0 +1,31 @@
+//divisiones
+$spacing-division-section: 2em 0;
+$spacing-division-1: 1em 0;
+$spacing-division-2: 2em 0;
+$spacing-division-3: 3em 0;
+$spacing-division-4: 4em 0;
+$spacing-division-5: 5em 0;
+$spacing-division-6: 6em 0;
+
+.division-section {
+    margin: $spacing-division-section;
+}
+
+.division-1 {
+    margin: $spacing-division-1;
+}
+.division-2 {
+    margin: $spacing-division-2;
+}
+.division-3 {
+    margin: $spacing-division-3;
+}
+.division-4 {
+    margin: $spacing-division-4;
+}
+.division-5 {
+    margin: $spacing-division-5;
+}
+.division-6 {
+    margin: $spacing-division-6;
+}

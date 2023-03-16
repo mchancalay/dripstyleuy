@@ -28,16 +28,27 @@
         }
     }
 
-    &-inputs {
-        margin-left: 4em;
-    }
-
     &-input {
         @include mixins.resetInput();
         padding: .4em 0 .4em .6em;
         background-color: colors.$color-light;
     }
 
+    &-input__checkbox-newsteller {
+        display: flex;
+        align-items: center;
+        font-size: variables.$font-contacto-newsteller;
+        gap: .5em;
+    }
 
+}
 
+@media screen and (max-width: 991.99px) {
+    .formulario-decorativo__img {
+        display: none;
+    }
+
+    .formulario-decorativo__marco {
+        display: none;
+    }
 }
