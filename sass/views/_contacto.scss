@@ -9,6 +9,7 @@
 
     &-decorativo {
         position: relative;
+        margin-right: 1em;
 
         &__img {
             width: 100%;
@@ -50,5 +51,9 @@
 
     .formulario-decorativo__marco {
         display: none;
+    }
+
+    .formulario {
+        margin: 1em;
     }
 }
